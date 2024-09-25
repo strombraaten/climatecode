@@ -1,0 +1,104 @@
+/* Use system fonts to reduce the need for font downloads */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Use semantic HTML elements for better accessibility */
+header, main, footer {
+    margin-bottom: 2rem;
+}
+
+/* Simple navigation styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+/* Use high contrast colors for better readability */
+a {
+    color: #0066cc;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Use relative units for better responsiveness */
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/* Optimize images (Note: Add appropriate width and height attributes to img tags) */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Custom styles that can't be easily achieved with Tailwind */
+@layer base {
+    @media (prefers-reduced-motion: no-preference) {
+        a {
+            transition: color 0.3s ease;
+        }
+    }
+}
+
+@layer components {
+    /* Add any custom component styles here if needed */
+}
+
+@layer utilities {
+    /* Add any custom utility classes here if needed */
+}
+
+/* Dark mode support for energy efficiency on OLED screens */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #f0f0f0;
+    }
+
+    a {
+        color: #66b3ff;
+    }
+}
+
+/* Updated section styling */
+#actionableTips {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f0f8ff; /* Light blue background */
+    border-radius: 8px;
+}
+
+#actionableTips h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+#actionableTips ol {
+    padding-left: 1.5rem;
+}
+
+#actionableTips li {
+    margin-bottom: 0.5rem;
+}
+
+#actionableTips ul {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+}

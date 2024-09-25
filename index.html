@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="no" class="antialiased">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klimakode</title>
+    <link href="/css/tailwind.css" rel="stylesheet">
+</head>
+<body class="font-sans text-gray-900 dark:text-text-dark bg-white dark:bg-background-dark max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header class="py-6 flex justify-between items-center">
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-primary hover:underline dark:text-primary-dark">Hjem</a></li>
+                <li><a href="#" class="text-primary hover:underline dark:text-primary-dark">Om oss</a></li>
+                <li><a href="#" class="text-primary hover:underline dark:text-primary-dark">Kontakt</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle" class="p-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+            <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+            <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+        </button>
+    </header>
+
+    <main>
+        <h1 class="text-4xl font-bold mb-6">Velkommen til KlimaKode</h1>
+        
+        <section id="actionableTips" class="bg-blue-50 dark:bg-blue-900 rounded-lg p-6 my-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Praktiske tips</h2>
+            <ol class="list-decimal list-inside space-y-2">
+                <li>Bruk systemskrifter</li>
+                <li>Optimaliser bilder
+                    <ul class="list-disc list-inside ml-4 mt-2">
+                        <li>Komprimer bilder</li>
+                        <li>Bruk passende formater</li>
+                    </ul>
+                </li>
+                <li>Minimer JavaScript-bruk</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="py-6 text-center text-gray-600 dark:text-gray-400">
+        &copy; 2023 ClimateCode. Alle rettigheter forbeholdt.
+    </footer>
+
+    <script>
+        const moonIcon = document.getElementById('moonIcon');
+        const sunIcon = document.getElementById('sunIcon');
+
+        function setDarkMode(isDark) {
+            if (isDark) {
+                document.documentElement.classList.add('dark');
+                moonIcon.classList.add('hidden');
+                sunIcon.classList.remove('hidden');
+            } else {
+                document.documentElement.classList.remove('dark');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            }
+        }
+
+        // Check for saved theme preference or use system preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setDarkMode(true);
+        } else {
+            setDarkMode(false);
+        }
+
+        // Toggle dark mode
+        document.getElementById('darkModeToggle').addEventListener('click', function() {
+            if (document.documentElement.classList.contains('dark')) {
+                setDarkMode(false);
+                localStorage.theme = 'light';
+            } else {
+                setDarkMode(true);
+                localStorage.theme = 'dark';
+            }
+        });
+    </script>
+</body>
+</html>
