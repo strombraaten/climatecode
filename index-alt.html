@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="no" class="antialiased">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klimakode</title>
+    <link href="/css/tailwind.css" rel="stylesheet">
+</head>
+<body class="bg-lochmara-50 dark:bg-lochmara-900 text-lochmara-800 dark:text-lochmara-100">
+    <header class="bg-lochmara-600 text-lochmara-50 p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Klimakode</h1>
+        <button id="darkModeToggle" class="p-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+            <!-- SVG icons remain unchanged -->
+        </button>
+    </header>
+
+    <div class="flex">
+        <aside class="sidebar w-70 h-screen fixed p-6 bg-lochmara-100 dark:bg-lochmara-800 text-lochmara-800 dark:text-lochmara-100">
+            <nav>
+                <ul class="space-y-3">
+                    <li><a href="#" class="hover:text-lochmara-600 dark:hover:text-lochmara-300">Hjem</a></li>
+                    <li><a href="#" class="hover:text-lochmara-600 dark:hover:text-lochmara-300">Om oss</a></li>
+                    <li><a href="#" class="hover:text-lochmara-600 dark:hover:text-lochmara-300">Kontakt</a></li>
+                    <li><a href="#actionableTips" class="hover:text-lochmara-600 dark:hover:text-lochmara-300">Praktiske tips</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="ml-70 pl-16 pt-8 pb-8 pr-8 bg-lochmara-50 dark:bg-lochmara-900">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl font-bold mb-6">Velkommen til Klimakode</h1>
+                
+                <section id="actionableTips" class="bg-lochmara-100 dark:bg-lochmara-800 rounded-lg p-6 my-8">
+                    <h2 class="text-2xl font-semibold mb-4 text-lochmara-700 dark:text-lochmara-200">Praktiske tips</h2>
+                    
+                    <h3 class="text-xl font-semibold mb-2 text-lochmara-600 dark:text-lochmara-300">Første prioritet</h3>
+                    <ol class="list-decimal list-inside space-y-2 mb-6">
+                        <li>Bruk systemskrifter</li>
+                        <li>Optimaliser bilder
+                            <ul class="list-disc list-inside ml-4 mt-2">
+                                <li>Komprimer bilder</li>
+                                <li>Bruk passende formater</li>
+                                <li>Implementer lazy loading for bilder</li>
+                            </ul>
+                        </li>
+                        <li>Minimer JavaScript-bruk</li>
+                        <li>Velg en bærekraftig hostingleverandør</li>
+                        <li>Komprimer filer</li>
+                        <li>Skap en lett opplevelse som standard</li>
+                    </ol>
+                    
+                    <h3 class="text-xl font-semibold mb-2 text-lochmara-600 dark:text-lochmara-300">Gjør det lille ekstra</h3>
+                    <ol class="list-decimal list-inside space-y-2">
+                        <li>Optimaliser nettlesercaching</li>
+                        <li>Vurder og undersøk tredjepartstjenester nøye</li>
+                        <li>Håndter avhengigheter på en hensiktsmessig måte</li>
+                        <li>Tilpass tekniske krav til bærekraftsmål</li>
+                        <li>Inkluder kompatibilitetstesting i hver utgivelsessyklus</li>
+                    </ol>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <footer class="ml-70 py-6 flex flex-col sm:flex-row justify-between items-center bg-lochmara-100 dark:bg-lochmara-800 p-4">
+        <span id="pageSize" class="text-sm text-lochmara-600 dark:text-lochmara-300 mb-2 sm:mb-0"></span>
+        <a href="/baerekraft.html" class="text-primary hover:underline dark:text-primary-dark">Les om hva som gjør dette til en bærekraftig nettside</a>
+    </footer>
+
+    <script>
+        // ... (same JavaScript as in the original file)
+    </script>
+</body>
+</html>

@@ -1,11 +1,27 @@
+/* Add this at the beginning of the file */
+:root {
+  --lochmara-50: #F3FAFF;
+  --lochmara-100: #D2EDFF;
+  --lochmara-200: #90D1FF;
+  --lochmara-300: #4EB6FF;
+  --lochmara-400: #0B9BFF;
+  --lochmara-500: #0076C8;
+  --lochmara-600: #005E9F;
+  --lochmara-700: #004676;
+  --lochmara-800: #002E4E;
+  --lochmara-900: #001625;
+  --lochmara-950: #000A10;
+}
+
 /* Use system fonts to reduce the need for font downloads */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1rem;
+    color: var(--lochmara-800);
+    background-color: var(--lochmara-50);
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* Use semantic HTML elements for better accessibility */
@@ -26,11 +42,11 @@ nav ul li {
 
 /* Use high contrast colors for better readability */
 a {
-    color: #0066cc;
+    color: var(--lochmara-600);
 }
 
 a:hover {
-    text-decoration: underline;
+    color: var(--lochmara-700);
 }
 
 /* Use relative units for better responsiveness */
@@ -68,29 +84,34 @@ img {
 /* Dark mode support for energy efficiency on OLED screens */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #1a1a1a;
-        color: #f0f0f0;
+        background-color: var(--lochmara-900);
+        color: var(--lochmara-100);
     }
 
     a {
-        color: #66b3ff;
+        color: var(--lochmara-300);
+    }
+
+    a:hover {
+        color: var(--lochmara-200);
     }
 }
 
-/* Updated section styling */
+/* Actionable Tips Section */
 #actionableTips {
     margin: 2rem 0;
     padding: 1rem;
-    background-color: #f0f8ff; /* Light blue background */
-    border-radius: 8px;
+    background-color: var(--lochmara-100);
+    border-radius: 0.5rem;
 }
 
 #actionableTips h2 {
-    color: #2c3e50;
+    color: var(--lochmara-700);
     margin-bottom: 1rem;
 }
 
-#actionableTips ol {
+#actionableTips ol,
+#actionableTips ul {
     padding-left: 1.5rem;
 }
 
@@ -100,5 +121,96 @@ img {
 
 #actionableTips ul {
     margin-top: 0.5rem;
-    padding-left: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 640px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Global content width rule */
+.content-wrapper {
+    width: 100%;
+    max-width: 560px; /* Set to exactly 560px */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+    .content-wrapper {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+/* Remove or comment out the sidebar and content styles if not needed */
+/*
+.sidebar {
+    width: 100%;
+    background-color: var(--lochmara-100);
+    color: var(--lochmara-800);
+}
+
+.content {
+    margin-left: 280px;
+    background-color: var(--lochmara-50);
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        width: 280px;
+        position: fixed;
+        height: 100vh;
+    }
+
+    .content {
+        margin-left: 280px;
+    }
+}
+*/
+
+/* Dark mode for sidebar and content */
+@media (prefers-color-scheme: dark) {
+    .sidebar {
+        background-color: var(--lochmara-800);
+        color: var(--lochmara-100);
+    }
+
+    .content {
+        background-color: var(--lochmara-900);
+    }
+
+    #actionableTips {
+        background-color: var(--lochmara-800);
+    }
+
+    #actionableTips h2 {
+        color: var(--lochmara-200);
+    }
 }
