@@ -1,30 +1,55 @@
-# Klimakode
+# Starlight Starter Kit: Basics
 
-Heisann! Simen heter jeg. Grunnen til at jeg starta dette er for å dokumentere hvilke konkrete grep vi kan ta for å lage mer bærekraftige digitale tjenester.
+[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-## Formål
+```
+npm create astro@latest -- --template starlight
+```
 
-For å utdype litt mer, så er tanken altså å:
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/withastro/starlight&create_from_path=examples/basics)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
 
-1. Utforske og dokumentere beste praksis for hvordan du kan redusere karbonavtrykket til tjenestene du bygger.
-2. Dele kunnskap og verktøy som kan hjelpe utviklere og bedrifter med å ta mer miljøvennlige valg
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## Fokusområder
+## 🚀 Project Structure
 
-Noen av fokusområdene for dette prosjektet inkluderer:
+Inside of your Astro + Starlight project, you'll see the following folders and files:
 
-- Energieffektiv koding og optimalisering
-- Bærekraftig skyinfrastruktur og serverløsninger
-- Miljøvennlig webdesign og UX
-- Reduksjon av dataoverføring og lagring
-- Livssyklusanalyse av digitale produkter
+```
+.
+├── public/
+├── src/
+│   ├── assets/
+│   ├── content/
+│   │   ├── docs/
+│   │   └── config.ts
+│   └── env.d.ts
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
+```
 
-## Bidrag
+Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
 
-Om du vil være med å hjelpe er det helt supert! For sammen kan vi sette fingeren på konkrete tiltak som kan gjøres i teamene vi jobber i.
+Images can be added to `src/assets/` and embedded in Markdown with a relative link.
 
-## Hvordan kan du bidra?
+Static assets, like favicons, can be placed in the `public/` directory.
 
-- Tipse andre om prosjektet, kanskje det kan inspirere til å gjøre ting bedre i deres eget miljø?
-- Legg inn issues hvis du ser noe som er feil, eller som bør endres
-- Legg inn PR for hvis du har forslag til endringer, eller anbefalinger
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
