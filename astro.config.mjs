@@ -7,7 +7,7 @@ export default defineConfig({
 		starlight({
 			title: 'Klimakode',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/strombraaten/climatecode',
 			},
 			sidebar: [
 				{
