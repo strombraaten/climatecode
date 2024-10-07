@@ -6,6 +6,9 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Klimakode',
+      components: {
+        Footer: "./src/components/footer.astro"
+      },
       social: {
         github: 'https://github.com/strombraaten/climatecode',
       },
