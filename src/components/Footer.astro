@@ -1,6 +1,30 @@
 ---
+import { LinkCard, CardGrid} from "@astrojs/starlight/components"
+import { getPrevAndNextPath } from "../utils/documents"
+const currentPath = Astro.params 
+const paths = getPrevAndNextPath(currentPath.slug)
 ---
 
-<div id="wcb" class="carbonbadge"></div>
-<script src="https://unpkg.com/website-carbon-badges@1.1.2/b.min.js" defer></script>
+<div>
+  <CardGrid>
+    {paths.prev && <LinkCard description={paths.prev.label} title="Previous" href={paths.prev.slug.replace("guides/", "")}>}
+    {paths.next && <LinkCard description={paths.next.label} title="Next" href={paths.next.slug.replace("guides/", "")}/>}
+  </CardGrid>
+</div>
+
+
+<div class="badge">
+  <div id="wcb" class="carbonbadge"></div>
+  <script is:inline src="https://unpkg.com/website-carbon-badges@1.1.2/b.min.js" defer></script>
+</div>
+
+
+<style>
+    .bagde {
+    display: flex;
+    justify-self: center;
+  }
+
+
+</style>
 
