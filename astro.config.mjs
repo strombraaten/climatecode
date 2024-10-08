@@ -8,7 +8,7 @@ export default defineConfig({
     starlight({
       title: 'Klimakode',
       components: {
-        Footer: "./src/components/footer.astro"
+        Footer: "./src/components/Footer.astro"
       },
       social: {
         github: 'https://github.com/strombraaten/climatecode',

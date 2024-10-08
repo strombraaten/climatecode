@@ -1,17 +1,11 @@
 ---
-import { LinkCard, CardGrid} from "@astrojs/starlight/components"
-import { getPrevAndNextPath } from "../utils/documents"
-const currentPath = Astro.params 
-const paths = getPrevAndNextPath(currentPath.slug)
+import Default from '@astrojs/starlight/components/Footer.astro';
+import type { Props } from '@astrojs/starlight/props';
 ---
 
-<div>
-  <CardGrid>
-    {paths.prev && <LinkCard description={paths.prev.label} title="Previous" href={paths.prev.slug.replace("guides/", "")}>}
-    {paths.next && <LinkCard description={paths.next.label} title="Next" href={paths.next.slug.replace("guides/", "")}/>}
-  </CardGrid>
-</div>
-
+<Default {...Astro.props}>
+  <slot />
+</Default>
 
 <div class="badge">
   <div id="wcb" class="carbonbadge"></div>
@@ -24,7 +18,5 @@ const paths = getPrevAndNextPath(currentPath.slug)
     display: flex;
     justify-self: center;
   }
-
-
 </style>
 
