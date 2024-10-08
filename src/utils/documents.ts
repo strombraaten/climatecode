@@ -26,33 +26,10 @@ export function getFilesInGuidesFolder(): FileObject[] {
       const fileToPush: FileObject = {
         label: fileName.replaceAll("-", " "),
         slug: "guides/" + fileName
-
       }
       fileNames.push(fileToPush);
     }
   });
 
   return fileNames;
-}
-
-type PrevAndNext = {
-  prev: FileObject | null;
-  next: FileObject | null;
-}
-
-export function getPrevAndNextPath(currentSlug: string | undefined): PrevAndNext {
-  const allGuidesFiles = getFilesInGuidesFolder();
-  const currentIndex = allGuidesFiles.findIndex((file) => file.slug === currentSlug);
-  let next = null;
-  let prev = null;
-  if (allGuidesFiles[currentIndex + 1]) {
-    next = allGuidesFiles[currentIndex + 1];
-  }
-  if (allGuidesFiles[currentIndex - 1]) {
-    prev = allGuidesFiles[currentIndex - 1];
-  }
-  return {
-    next,
-    prev
-  }
 }
