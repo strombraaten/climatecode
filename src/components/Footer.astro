@@ -1,22 +1,21 @@
 ---
-import Default from '@astrojs/starlight/components/Footer.astro';
-import type { Props } from '@astrojs/starlight/props';
+import Default from "@astrojs/starlight/components/Footer.astro";
+import type { Props } from "@astrojs/starlight/props";
 ---
 
 <Default {...Astro.props}>
   <slot />
 </Default>
 
-<div class="badge">
-  <div id="wcb" class="carbonbadge"></div>
-  <script is:inline src="https://unpkg.com/website-carbon-badges@1.1.2/b.min.js" defer></script>
-</div>
-
+<div id="wcb" class="carbonbadge"></div>
+<script
+  is:inline
+  src="https://unpkg.com/website-carbon-badges@1.1.2/b.min.js"
+  defer></script>
 
 <style>
-    .bagde {
+  .carbonbadge {
     display: flex;
-    justify-self: center;
+    justify-self: start;
   }
 </style>
-
