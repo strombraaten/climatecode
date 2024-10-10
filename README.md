@@ -14,7 +14,7 @@ Tanken er å:
 Noen av fokusområdene for dette prosjektet inkluderer:
 
 - Energieffektiv koding og optimalisering
-    - Kanskje også analyse av digitale produkter
+  - Kanskje også analyse av digitale produkter
 - Bærekraftig skyinfrastruktur og serverløsninger
 - Miljøvennlig webdesign og UX
 - Reduksjon av dataoverføring og lagring

@@ -1,0 +1,6 @@
+{
+  "hooks": {
+    "commit-msg": ".husky/commit-msg",
+    "pre-commit": "sh .husky/pre-commit"
+  }
+}
