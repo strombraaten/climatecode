@@ -7,11 +7,14 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.28.2",
     "astro": "^4.15.3",
+    "prettier": "^3.3.3",
     "sharp": "^0.32.5"
   }
 }
