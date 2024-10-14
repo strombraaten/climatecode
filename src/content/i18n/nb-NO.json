@@ -25,16 +25,10 @@
     "aside.caution": "Caution",
     "aside.danger": "Danger",
     "fileTree.directory": "Mappe",
-    "builtWithStarlight.label": "Bygget med Astro, på Starlight-fundamentet "
-  }
-
-  {
+    "builtWithStarlight.label": "Bygget med Astro, på Starlight-fundamentet",
     "expressiveCode.copyButtonCopied": "Kopiert!",
     "expressiveCode.copyButtonTooltip": "Kopier til utklippstavle",
-    "expressiveCode.terminalWindowFallbackTitle": "Terminalen"
-  }
-
-  {
+    "expressiveCode.terminalWindowFallbackTitle": "Terminalen",
     "pagefind.clear_search": "Tøm",
     "pagefind.load_more": "Last inn flere resultater",
     "pagefind.search_label": "Søk på denne nettsiden",
@@ -45,5 +39,4 @@
     "pagefind.alt_search": "Ingen resultater for [SEARCH_TERM]. Viser resultater for [DIFFERENT_TERM] i stedet",
     "pagefind.search_suggestion": "Ingen resultater for [SEARCH_TERM]. Prøv et av følgende søk i stedet:",
     "pagefind.searching": "Søker etter [SEARCH_TERM]..."
-  }
-  
+}
