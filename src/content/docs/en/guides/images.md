@@ -29,6 +29,7 @@ Use modern formats like WebP for better compression and reduced data transfer:
 Use tools like cwebp or online converters to convert existing images to WebP format.
 
 ### Implement Lazy Loading for Images
+
 Lazy loading only loads images when they become visible in the viewport:
 
 <img src="image.jpg" loading="lazy" alt="Description" />

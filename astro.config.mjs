@@ -7,13 +7,13 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Klimakode',
-      defaultLocale: "nb",
+      defaultLocale: 'nb',
       components: {
-        Footer: "./src/components/Footer.astro"
+        Footer: './src/components/Footer.astro',
       },
       locales: {
         nb: {
-          label: "Norsk",
+          label: 'Norsk',
           lang: 'nb-NO',
           sidebar: [
             {
@@ -23,14 +23,14 @@ export default defineConfig({
           ],
         },
         en: {
-          label: "English",
+          label: 'English',
           sidebar: [
             {
               label: 'Tips for developing more sustainably',
               autogenerate: { directory: 'en/guides' },
             },
           ],
-        }
+        },
       },
       social: {
         github: 'https://github.com/strombraaten/climatecode',
