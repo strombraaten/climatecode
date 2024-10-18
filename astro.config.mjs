@@ -7,29 +7,34 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Klimakode',
+      defaultLocale: "nb",
       components: {
         Footer: "./src/components/Footer.astro"
+      },
+      locales: {
+        nb: {
+          label: "Norsk",
+          lang: 'nb-NO',
+          sidebar: [
+            {
+              label: 'Tips for å utvikle mer bærekraftig ',
+              autogenerate: { directory: 'nb/guides' },
+            },
+          ],
+        },
+        en: {
+          label: "English",
+          sidebar: [
+            {
+              label: 'Tips for developing more sustainably',
+              autogenerate: { directory: 'en/guides' },
+            },
+          ],
+        }
       },
       social: {
         github: 'https://github.com/strombraaten/climatecode',
       },
-      sidebar: [
-        {
-          label: 'Tips for å utvikle mer bærekraftig ',
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: 'Bilder', slug: 'guides/bilder' },
-            {
-              label: 'Praktiske tips prioritet',
-              slug: 'guides/praktiske-tips-prioritet',
-            },
-            {
-              label: 'Praktiske tips ekstra',
-              slug: 'guides/praktiske-tips-ekstra',
-            },
-          ],
-        },
-      ],
     }),
   ],
 });
