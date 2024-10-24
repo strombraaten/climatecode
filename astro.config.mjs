@@ -6,15 +6,15 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Klimakode',
-      defaultLocale: "nb",
+      defaultLocale: 'root',
       locales: {
-        nb: {
+        root: {
           label: "Norsk",
           lang: 'nb-NO',
           sidebar: [
             {
               label: 'Tips for å utvikle mer bærekraftig ',
-              autogenerate: { directory: 'nb/guides' },
+              autogenerate: { directory: '/guides' },
             },
           ],
         },
