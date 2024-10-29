@@ -1,5 +1,5 @@
 ---
-title: Praktiske tips - Første prioritet
+title: Første prioritet
 description: Enkle grep for å gjøre nettsiden din mer miljøvennlig
 ---
 

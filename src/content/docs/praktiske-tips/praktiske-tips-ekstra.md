@@ -1,5 +1,5 @@
 ---
-title: Praktiske tips - Gjør det lille ekstra
+title: Gjør det lille ekstra
 description: Ytterligere tiltak for å forbedre nettsidens bærekraft
 ---
 
