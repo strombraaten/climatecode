@@ -14,7 +14,7 @@ export default defineConfig({
           sidebar: [
             {
               label: 'Tips for å utvikle mer bærekraftig ',
-              autogenerate: { directory: '/guides' },
+              autogenerate: { directory: '/praktiske-tips' },
             },
           ],
         },
@@ -23,7 +23,7 @@ export default defineConfig({
           sidebar: [
             {
               label: 'Tips for developing more sustainably',
-              autogenerate: { directory: 'en/guides' },
+              autogenerate: { directory: 'en/practical-tips' },
             },
           ],
         }
