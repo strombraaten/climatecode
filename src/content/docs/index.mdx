@@ -1,34 +1,66 @@
 ---
 title: Velkommen til klimakode 🌱 👩‍💻
 description: En guide til bærekraftig utvikling av digitale tjenester
+template: splash
+pagefind: false
 hero:
-  tagline: En sjekkliste for deg og teamet ditt for hvordan dere kan redusere utslippene fra de digitale tjenestene dere lager.
+  tagline: En sjekkliste for deg og dere som lager digitale tjenester, for å redusere utslippene de har.
   image:
     file: ../../assets/earth-globe.png
+  actions:
+    - text: Kom i gang
+      link: /guides/praktiske-tips-prioritet/
+      icon: right-arrow
+      variant: primary
+    - text: Les mer om prosjektet
+      link: /about/
+      variant: secondary
+nextPage: false
 ---
 
-Koden vi produserer påvirker flere enn bare utviklere. Derfor er det viktig at flere får forståelse for hvilke grep du og jeg kan ta for å påvirke produktene vi lager.
+import { CardGrid, Card, LinkCard } from '@astrojs/starlight/components';
 
-## Hovedområder for bærekraftig utvikling
+## Konkrete grep du kan gjøre i dag
 
-- [Web-utvikling](./web-development/static-site-generators)
-- [Infrastruktur](./infrastructure/sustainable-cloud-hosting)
-- [Ytelse](./performance/reducing-data-transfer)
-- [Tilgjengelighet og inkludering](./accessibility)
-- [Måling og rapportering](./measuring-reporting/carbon-footprint-calculation)
-- [Beste praksis](./best-practices/sustainability-checklist)
+Koden som skrives representerer arbeidet til flere enn bare utviklere. Derfor er det viktig at flere får forståelse for hvordan vi kan redusere utslippene fra de digitale tjenestene vi lager. Konkrete grep som å:
 
-Velg et område for å lære mer om hvordan du kan gjøre dine digitale tjenester mer bærekraftige.
+<CardGrid stagger>
+  <Card icon="approve-check-circle" title="Definere åpningstider">
+    Ved å definere åpningstider for nettsiden din kan du redusere energiforbruket når tjenesten ikke er i bruk.
+  </Card>
+  <Card icon="approve-check-circle" title="Bruke systemfonter">
+    Hvor ulik er egentlig den sans serifen du liker så godt fra systemfontene som er allerede finnes på enheten til sluttbrukeren din?
+  </Card>
+  <Card icon="approve-check-circle" title="Begrense javascript">
+    Mindre JavaScript betyr mindre prosessering på brukerens enhet og redusert energiforbruk.
+  </Card>
+  <Card icon="approve-check-circle" title="Komprimere bilder">
+    Optimaliserte bilder reduserer dataoverføring og gir raskere lasting av nettsiden.
+  </Card>
+</CardGrid>
 
-## Hvorfor bærekraftig utvikling?
+### Hvorfor bærekraftig utvikling?
 
-Bærekraftig utvikling av digitale tjenester handler ikke bare om å redusere miljøpåvirkningen. Det handler også om å skape mer effektive, tilgjengelige og brukervennlige løsninger som kan gi langsiktige fordeler for både brukere og utviklere.
+Bærekraftig utvikling av digitale tjenester handler ikke bare om å redusere miljøpåvirkningen. Det handler også om å:
 
-Ved å følge prinsippene for bærekraftig utvikling kan vi:
-
-- Redusere energiforbruk og CO2-utslipp
-- Forbedre ytelsen og brukeropplevelsen
+- Forbedre brukeropplevelsen, samtidig som du forbedrer ytelsen til tjenesten
 - Øke tilgjengeligheten for alle brukere
 - Redusere kostnader knyttet til drift og vedlikehold
 
-La oss sammen ta ansvar for å skape en mer bærekraftig digital fremtid!
+Med det sagt, er du klar til å komme i gang?
+Vi anbefaler å starte på på et av følgende steder:
+
+<CardGrid>
+	<LinkCard title="Hva vi kan gjøre" href="/guides/praktiske-tips-prioritet/">
+		Konkrete grep du kan ta for å redusere utslippene fra tjenestene dine
+	</LinkCard>
+	<LinkCard title="Kostnader" href="/guides/kostnader/">
+		Hvordan bærekraftig utvikling kan redusere kostnadene dine
+	</LinkCard>
+	<LinkCard title="Gjør det lille ekstra" href="/guides/praktiske-tips-ekstra/">
+		Tips til hvordan du kan gå enda lenger i å redusere utslippene
+	</LinkCard>
+	<LinkCard title="Argumenter" href="/guides/argumenter/">
+		Gode argumenter for hvorfor vi bør tenke på bærekraft i utviklingen
+	</LinkCard>
+</CardGrid>
