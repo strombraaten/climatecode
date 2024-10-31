@@ -32,7 +32,7 @@ export default defineConfig({
         github: 'https://github.com/strombraaten/climatecode',
       },
       editLink: {
-        baseUrl: 'https://github.com/strombraaten/climatecode',
+        baseUrl: 'https://github.com/strombraaten/climatecode/edit/main/',
       },
     }),
   ],
