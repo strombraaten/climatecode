@@ -31,6 +31,9 @@ export default defineConfig({
       social: {
         github: 'https://github.com/strombraaten/climatecode',
       },
+      editLink: {
+        baseUrl: 'https://github.com/strombraaten/climatecode',
+      },
     }),
   ],
 });
