@@ -5,7 +5,14 @@ description: Hvorfor og hvordan du bør fjerne ubrukte funksjoner fra tjenesten 
 
 ## Rydd i koden regelmessig
 
-Akkurat som du rydder i klesskapet ditt med jevne mellomrom, bør du også rydde i tjenesten din. Funksjoner som virket som en god idé for et år siden, brukes kanskje ikke i det hele tatt i dag.
+Akkurat som du rydder hjemme hos deg selv, bør du også rydde i tjenesten din. Funksjoner som virket som en god idé for et år siden, brukes kanskje ikke i det hele tatt i dag.
+
+### Skaff deg en oversikt
+
+For å få oversikt over hva som kan slettes, bør du:
+
+1. Sjekke utslippsdata fra skytjenestene dine. Mange tilbydere har denne informasjonen tilgjengelig, selv om det ikke alltid er lett å finne.
+2. Undersøke hvordan brukerne faktisk bruker tjenesten din. Ved å følge med på brukerdata kan du oppdage funksjoner som ikke blir brukt, og dermed kan fjernes.
 
 ### Test før du sletter
 
