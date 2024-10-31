@@ -27,17 +27,3 @@ Bruk moderne formater som WebP for bedre komprimering og redusert dataoverførin
   </picture>
   ```
 - Bruk verktøy som cwebp eller online-konverterere for å konvertere eksisterende bilder til WebP-format.
-
-### Implementer lazy loading for bilder
-
-Lazy loading laster bare inn bilder når de er synlige i viewporten:
-
-```html
-<img src="bilde.jpg" loading="lazy" alt="Beskrivelse" />
-```
-
-#### Hvorfor lazy loading?
-
-- Reduserer initial lastingshastighet og energiforbruk.
-- Forbedrer ytelse og brukeropplevelse.
-- Reduserer lastingshastighet og energiforbruk.
