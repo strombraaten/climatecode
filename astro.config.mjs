@@ -9,7 +9,7 @@ export default defineConfig({
       defaultLocale: 'root',
       locales: {
         root: {
-          label: "Norsk",
+          label: 'Norsk',
           lang: 'nb-NO',
           sidebar: [
             {
@@ -19,14 +19,14 @@ export default defineConfig({
           ],
         },
         en: {
-          label: "English",
+          label: 'English',
           sidebar: [
             {
               label: 'Tips for developing more sustainably',
               autogenerate: { directory: 'en/practical-tips' },
             },
           ],
-        }
+        },
       },
       social: {
         github: 'https://github.com/strombraaten/climatecode',

@@ -2,6 +2,7 @@
 title: Hvorfor vise mer enn det som er nødvendig?
 description: Hvordan og hvorfor du bør bruke lazy loading for bilder på nettsiden din
 ---
+
 ## Hva er lazy loading?
 
 Tenk deg at du er på et museum med mange bilder. Når du går inn i museet, ser du bare bildene i rommet du er i, og du fokuserer bare på ett bilde av gangen - ikke alle bildene i _hele_ museet på en gang.

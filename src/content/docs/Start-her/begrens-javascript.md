@@ -27,10 +27,10 @@ Du kan også bruke såkalt "tree shaking" for å fjerne ubrukt kode
 
 ```javascript
 // I stedet for dette
-import { everything } from 'huge-library'
+import { everything } from 'huge-library';
 
 // Gjør dette
-import { onlyWhatYouNeed } from 'huge-library'
+import { onlyWhatYouNeed } from 'huge-library';
 ```
 
 ### Fordeler

@@ -16,11 +16,11 @@ Fontfiler kan være overraskende store og påvirke både lastetid og energiforbr
 ### Implementer subset av fonter
 
 ```html
-<link 
-  rel="preload" 
-  href="din-font.woff2?subset=latin" 
-  as="font" 
-  type="font/woff2" 
+<link
+  rel="preload"
+  href="din-font.woff2?subset=latin"
+  as="font"
+  type="font/woff2"
   crossorigin
 />
 ```
